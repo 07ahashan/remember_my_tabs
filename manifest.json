@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "RememberMyTabs",
+  "version": "1.0.0",
+  "description": "Solve tab-induced RAM exhaustion with Hybrid Local Persistence + Smart Restore.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "sessions",
+    "alarms",
+    "tabGroups"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_title": "RememberMyTabs"
+  },
+  "commands": {
+    "save_active_workspace": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Save current tabs to workspace"
+    }
+  }
+}

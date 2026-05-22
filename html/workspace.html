@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/shared.css">
+  <link rel="stylesheet" href="../css/workspace.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>RememberMyTabs Dashboard</title>
+</head>
+<body>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="logo">RememberMyTabs</div>
+      <nav>
+        <a href="#" class="nav-item active">Workspaces</a>
+        <a href="#" class="nav-item">Settings</a>
+      </nav>
+    </aside>
+    
+    <main class="content">
+      <header class="topbar">
+        <h1>Your Workspaces</h1>
+        <button id="create-workspace-btn" class="primary">Save Current Window as Workspace</button>
+      </header>
+      
+      <div class="grid-container" id="workspaces-grid">
+        <!-- Workspaces will be injected here -->
+      </div>
+    </main>
+  </div>
+  
+  <script src="../js/db.js"></script>
+  <script src="../js/workspace.js"></script>
+</body>
+</html>
